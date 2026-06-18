@@ -2,17 +2,21 @@
 
 ## Architecture
 
-
-
-User
- ↓
-Nginx
- ↓
-React Frontend
- ↓
-NodeJS Backend
- ↓
-PostgreSQL
+```text
+                Internet
+                    │
+                    ▼
+                Nginx
+                    │
+                    ▼
+          React Frontend (Port 80)
+                    │
+                    ▼
+         NodeJS Backend (Port 8080)
+                    │
+                    ▼
+       PostgreSQL Database (5432)
+```
 
 
 
